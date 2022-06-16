@@ -4,6 +4,13 @@
   justify-content: space-between;
   height: 13.0667vw;
   border-bottom: 1px solid rgb(229, 229, 229);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+
 
   &__left {
     display: flex;
@@ -20,6 +27,29 @@
   &__bag {
     margin-right: 4vw;
 
+    button {
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      top: 9px;
+      left: 13px;
+      font-size: 8px;
+
+      @media (min-width: 375px) {
+        top: 11px;
+        left: 16px;
+      }
+      @media (min-width: 425px) {
+        font-size: 10px;
+      }
+      @media (min-width: 768px) {
+        top: 21px;
+        left: 25px;
+        font-size: 14px;
+      }
+    }
   }
 
   .logo {
@@ -34,6 +64,17 @@
 
 .menuNav {
   display: none;
+  margin-top: 60px;
+  @media (min-width: 424px) {
+    margin-top: 75px;
+  }
+  @media (min-width: 500px) {
+    margin-top: 90px;
+  }
+  @media (min-width: 600px) {
+    margin-top: 120px;
+  }
+
 }
 
 .menuNav.showMenu {

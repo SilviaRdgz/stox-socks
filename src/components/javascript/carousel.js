@@ -3,25 +3,25 @@ import '../styles/carousel.scss';
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({children, width}) => {
     return (
-        <div className="carousel-item" style = {{ width: width }}>
+        <div className="carousel-item" style={{width: width}}>
             {children}
         </div>
     );
 };
 
 
-const Carousel = ({ children }) => {
+const Carousel = ({children}) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [setPaused] = useState(false);
 
     const updateIndex = (newIndex) => {
-        if(newIndex < 0 ){
+        if (newIndex < 0) {
             newIndex = 0;
         } else if (newIndex >= React.Children.count(children)) {
-            newIndex = React.Children.count(children) -1;
-            }
+            newIndex = React.Children.count(children) - 1;
+        }
 
         setActiveIndex(newIndex);
     }
