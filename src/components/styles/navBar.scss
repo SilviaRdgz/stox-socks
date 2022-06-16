@@ -1,0 +1,63 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 13.0667vw;
+  border-bottom: 1px solid rgb(229, 229, 229);
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__burger {
+    background: transparent;;
+    border: none;
+    margin: 4vw;
+  }
+
+  &__bag {
+    margin-right: 4vw;
+
+  }
+
+  .logo {
+    height: 4.8vw;
+    padding: 0.8vw 0 0 0.8vw;
+  }
+
+  svg {
+    height: 6vw;
+  }
+}
+
+.menuNav {
+  display: none;
+}
+
+.menuNav.showMenu {
+  display: block;
+}
+
+.contact {
+  div {
+    padding: 40px 36px;
+    letter-spacing: 0.05em;
+    line-height: 4.8vw;
+
+    p {
+      font-weight: bold;
+      font-size: 3.5vw;
+      color: black;
+
+    }
+
+    span {
+      color: gray;
+      font-size: 3.5vw;
+      margin-left: 2px;
+      font-weight: 500;
+    }
+  }
+}

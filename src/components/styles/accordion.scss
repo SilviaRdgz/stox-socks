@@ -1,0 +1,66 @@
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 36px;
+  display: flex;
+  align-items: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.5px solid rgb(229, 229, 229);
+  outline: none;
+  transition: background-color 0.6s ease;
+
+  &__title {
+    font-weight: 600;
+    font-size: 4vw;
+    letter-spacing: 0.15em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+
+  }
+
+  &__content {
+    background-color: white;
+    overflow: auto;
+    transition: max-height 0.6s ease;
+  }
+
+  &__text {
+    padding: 18px 36px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 3.5vw;
+        letter-spacing: 0.05em;
+        color: gray;
+      }
+      span {
+        color: lightgray;
+        font-weight: 600;
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+.rotate {
+  transform: rotate(90deg);
+}

@@ -1,0 +1,51 @@
+.carousel {
+  overflow: hidden;
+  margin: 4vw 0 4vw 4vw;
+
+  &__wrapper {
+    white-space: nowrap;
+    transition: transform 0.3s;
+  }
+}
+
+.carousel-item {
+  display: inline-flex;
+  max-width: 300px;
+
+  &__container {
+    position: relative;
+    border-right: 4vw solid white;
+    object-fit: cover;
+    height: 53.333vw;
+
+
+    img {
+      width: 100%;
+      height: 53.333vw;
+      object-fit: cover;
+    }
+
+    .mask {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(rgba(18, 18, 18, 0), rgba(18, 18, 18, 0), rgba(18, 18, 18, 0.4));
+      object-fit: cover;
+      height: 53.333vw;
+
+      h1 {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        margin-left: 20px;
+      }
+    }
+
+
+  }
+
+}
+
+
